@@ -2,7 +2,7 @@
 
 //figure out how to get accelerometer data from both pi and flight computers
 
-`
+{
 bufferTimer = 15 //number of seconds between buffers
 sampleTimeDelay = .01 // how often we sample the sensors in seconds
 bufferCounter = bufferTimer / sampleTimeDelay //how many samples before we make a new buffer
@@ -34,6 +34,6 @@ while((pi accelerometer magnitude greater than 5) or (eggtimer accelerometer mag
     
 wait 15 minutes
 stop recording the final file and save to (flightRecording)
-`
+}
 
 
