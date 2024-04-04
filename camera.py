@@ -3,7 +3,7 @@ from picamera import PiCamera
 from gpiozero import OutputDevice
 import serial, csv
 import threading
-import adafruit_icm20x
+import adafruit_icm20x, board
 import os, math
 
 
@@ -15,7 +15,7 @@ import os, math
 # figure out how to get accelerometer data from both pi and flight computers
 
 # init gpio, serial and i2c
-smoke = OutputDevice(17) # gpio pin to activate smoke flare / payload
+smoke = OutputDevice(5) # gpio pin to activate smoke flare / payload
 ser = serial.Serial( # serial connection to read accelerometer data from quark
     port='/dev/ttyS0', #Replace ttyS0 with ttyAM0 for Pi1,Pi2,Pi0
     baudrate = 9600, # TODO: determine baud rate for quark

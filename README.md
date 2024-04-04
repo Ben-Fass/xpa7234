@@ -25,12 +25,16 @@
 
 - fail to detect boost
   - loss of video
+- altimeter does not work as intended
+  - failure to deploy main chute
+  - deploy main chute too early
+  - deploy main chute too late
 - execution errors out (critical)
   - deployment failure
 
 ## install pip libraries
 
-`Adafruit_Blinka `
+`sudo pip3 install Adafruit-Blinka`
 
 `sudo pip3 install adafruit-lps2x`
 
