@@ -13,7 +13,7 @@
   - integration: 0%
   - testing: 0%
 - thermister.py
-  - code: 20%
+  - code: 50%
   - integration: 0%
   - testing: 0%
 - deployment
